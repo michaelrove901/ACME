@@ -28,6 +28,12 @@ class C_reporte extends Enrutador
         session_start();
         $this->vista("pdf");
     }
+    public function ReporteGeneral()
+    {
+        session_start();
+        $this->vista("cabecera");
+        $this->vista("reporteGeneral");
+    }
     public function reportePDF()
     {
         $con = $this->modelo->Reporte();
@@ -38,5 +44,19 @@ class C_reporte extends Enrutador
         session_start();
         $this->vista("reporteExcel.php");
     }
-   
+    public function vehiculosInscritos()
+    {
+        $con = $this->modelo->vehiInscritos();
+        return $con;
+    }
+    public function conductoresInscritos()
+    {
+        $con = $this->modelo->conduInscritos();
+        return $con;
+    }
+    public function propietariosInscritos()
+    {
+        $con = $this->modelo->propiInscritos();
+        return $con;
+    }
 }

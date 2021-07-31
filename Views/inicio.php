@@ -17,7 +17,7 @@
             <!-- Login Form -->
             <form action="<?= url ?>usuario/login" method="POST">
                 <input type="text" id="login" class="fadeIn second" name="usuario" placeholder="Usuario">
-                <input type="text" id="password" class="fadeIn third" name="clave" placeholder="Contraseña">
+                <input type="password" id="password" class="fadeIn third" name="clave" placeholder="Contraseña">
                 <input type="submit" class="fadeIn fourth" value="Aceptar" id="aceptar">
             </form>
 

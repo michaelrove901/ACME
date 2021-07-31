@@ -36,7 +36,24 @@ class M_reporte
         $con = $this->con->conectar()->query($sql);
         return $con;
     }
-    
+    public function vehiInscritos()
+    {
+        $sql = "SELECT COUNT(idVehiculo) as vehiculo FROM vehiculo";
+        $con = $this->con->conectar()->query($sql);
+        return $con;
+    }
+    public function propiInscritos()
+    {
+        $sql = "SELECT COUNT(idPropietario) as propietario FROM propietario";
+        $con = $this->con->conectar()->query($sql);
+        return $con;
+    }
+    public function conduInscritos()
+    {
+        $sql = "SELECT COUNT(idConductor) as conductor FROM conductor";
+        $con = $this->con->conectar()->query($sql);
+        return $con;
+    }
     
     public function set($atr, $val)
     {

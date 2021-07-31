@@ -83,6 +83,7 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="<?= url ?>Reportes/pdf.php">Informe Vehiculos (PDF)</a>
                         <a class="dropdown-item" target="_blank" href="<?= url ?>Reportes/reporteExcel.php?id=<?= url ?>">Informe Vehiculos (Excel)</a>
+                        <a class="dropdown-item"  href="<?= url ?>reporte/ReporteGeneral">Informe General</a>
                     </div>
                     
                 </li>
